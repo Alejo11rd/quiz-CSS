@@ -1,0 +1,50 @@
+body {
+    background-color: lightblue;
+  }
+
+  h1 {
+    color: navy;
+    margin-left: 20px;
+  }
+  h1 {
+    background-color: green;
+  }
+  
+  div {
+    background-color: rgb(122, 148, 49);
+  }
+  
+  div {
+    background-color:  rgb(235, 9, 216);
+    opacity: 22;
+  }
+  
+  p {
+    background-color: rgb(239, 238, 238);
+  }
+  p.dotted {border-style: dotted;}
+  p.dashed {border-style: dashed;}
+  p.solid {border-style: solid;}
+  p.double {border-style: double;}
+  p.groove {border-style: groove;}
+  p.ridge {border-style: ridge;}
+  p.inset {border-style: inset;}
+  p.outset {border-style: outset;}
+  p.none {border-style: none;}
+  p.hidden {border-style: hidden;}
+  p.mix {border-style: dotted dashed solid double;}
+ 
+  p.one {
+    border-style: solid;
+    border-color: red;
+  }
+  
+  p.two {
+    border-style: solid;
+    border-color: green;
+  }
+  
+  p.three {
+    border-style: dotted;
+    border-color: blue;
+  }
