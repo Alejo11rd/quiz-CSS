@@ -1,50 +1,196 @@
-body {
-    background-color: lightblue;
-  }
 
-  h1 {
-    color: navy;
-    margin-left: 20px;
+
+/* General Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #554f4f; /* Fondo más oscuro */
+  color: #f4f4f4; /* Texto más claro para contraste */
+}
+
+/* Header Styles */
+.header {
+  background-color: #b30000; /* Rojo oscuro */
+  color: white;
+  text-align: center;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.header h1, .header h2 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Navigation Menu */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #800000; /* Rojo oscuro */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+ul li {
+  border-right: 1px solid #bbb;
+}
+
+ul li:last-child {
+  border-right: none;
+}
+
+ul li a {
+  display: block;
+  padding: 14px 20px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+ul li a:hover {
+  background-color: #ff3333; /* Rojo claro al hacer hover */
+}
+
+ul li a.active {
+  background-color: #ff4d4d; /* Rojo más claro para el activo */
+}
+
+/* Top Navigation Links */
+.topnav {
+  display: flex;
+  justify-content: center;
+  background-color: #b30000;
+  margin-bottom: 20px;
+}
+
+.topnav a {
+  display: inline-block;
+  padding: 12px 16px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.topnav a:hover {
+  background-color: #ff3333;
+  color: white;
+}
+
+/* Column Layout */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.column {
+  background-color: #333; /* Fondo de las columnas más oscuro */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra más oscura */
+}
+
+.column img {
+  display: block;
+  margin: 10px auto;
+}
+
+.column.side {
+  width: 22%;
+}
+
+.column.middle {
+  width: 50%;
+}
+
+.column h2 {
+  color: #ff6666; /* Rojo más claro */
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.column p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #f4f4f4; /* Texto más claro en las columnas */
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
   }
-  h1 {
-    background-color: green;
-  }
-  
-  div {
-    background-color: rgb(122, 148, 49);
-  }
-  
-  div {
-    background-color:  rgb(235, 9, 216);
-    opacity: 22;
-  }
-  
-  p {
-    background-color: rgb(239, 238, 238);
-  }
-  p.dotted {border-style: dotted;}
-  p.dashed {border-style: dashed;}
-  p.solid {border-style: solid;}
-  p.double {border-style: double;}
-  p.groove {border-style: groove;}
-  p.ridge {border-style: ridge;}
-  p.inset {border-style: inset;}
-  p.outset {border-style: outset;}
-  p.none {border-style: none;}
-  p.hidden {border-style: hidden;}
-  p.mix {border-style: dotted dashed solid double;}
- 
-  p.one {
-    border-style: solid;
-    border-color: red;
-  }
-  
-  p.two {
-    border-style: solid;
-    border-color: green;
-  }
-  
-  p.three {
-    border-style: dotted;
-    border-color: blue;
-  }
+}
+
+/* Paragraph Borders */
+p.dotted {
+  border: 2px dotted #b30000; /* Rojo oscuro */
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #4d0000; /* Fondo más oscuro */
+}
+
+p.one {
+  border: 2px solid #b30000; /* Rojo oscuro */
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #4d0000;
+}
+
+p.two {
+  border: 2px solid #ff4d4d; /* Rojo claro */
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #660000; /* Fondo rojo más oscuro */
+}
+
+p.three {
+  border: 2px dotted #ff6666; /* Rojo más claro */
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #4d0000;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #800000; /* Rojo oscuro */
+  padding: 15px;
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+
+/* Miscellaneous */
+h3 {
+  margin-top: 20px;
+  color: #ff6666; /* Rojo más claro */
+}
+
+/* Improved paragraph layout */
+h2, h3 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+  color: #f4f4f4;
+}

@@ -1,36 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<link rel="stylesheet" href="Styles.css/style.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="Styles.css/style.css">
+  <title>CSS QUIZ</title>
+  <link rel="icon" type="image/x-icon" href="imgs/images.png">
 </head>
 <body>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <i class="fas fa-cloud" style="font-size:24px;"></i>
+    <i class="fas fa-cloud" style="font-size:36px;"></i>
+    <i class="fas fa-cloud" style="font-size:48px;color:rgb(236, 226, 226);"></i>
 
-<h1>mi pagina</h1>
-<p>primer texto</p>
-<p style="color:red;">css en linea solo a un elemento</p>
-<div>hola</div>
+  <div class="container">
 
+    <!-- Navigation Menu -->
+    <ul>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+      <li style="float:right"><a class="active" href="#about">About</a></li>
+    </ul>
 
-<h2>The border-style Property</h2>
-<p>This property specifies what kind of border to display:</p>
+    <!-- Header Section -->
+    <div class="header">
+      <h1>La Segunda Guerra Mundial</h1>
+      <h2>Principales Países del Caos</h2>
+    </div>
 
-<p class="dotted">A dotted border.</p>
-<p class="dashed">A dashed border.</p>
-<p class="solid">A solid border.</p>
-<p class="double">A double border.</p>
-<p class="groove">A groove border.</p>
-<p class="ridge">A ridge border.</p>
-<p class="inset">An inset border.</p>
-<p class="outset">An outset border.</p>
-<p class="none">No border.</p>
-<p class="hidden">A hidden border.</p>
-<p class="mix">A mixed border.</p>
+    <!-- Top Navigation Links -->
+    <div class="topnav">
+      <a href="https://www.youtube.com/watch?v=6cTrb1Uml3w">Alemania</a>
+      <a href="https://www.youtube.com/watch?v=OTXiHNfizkE">Italia</a>
+      <a href="https://www.youtube.com/watch?v=wwA_tx5539I">Japón</a>
+      <a href="https://www.youtube.com/watch?v=RwiznsBqEJk">Unión Soviética</a>
+      <a href="https://www.youtube.com/watch?v=_IGC0Ybaubk">China</a>
+      <a href="https://www.youtube.com/watch?v=b5dE_CKulKY">Reino Unido</a>
+      <a href="https://www.youtube.com/watch?v=yxsroK2Yff8">estados Unidos</a>
+      <a href="https://www.youtube.com/watch?v=Sh0mGok25O8">segunda guerra mundial</a>
+    
+    </div>
 
-<p class="one">A solid red border</p>
-<p class="two">A solid green border</p>
-<p class="three">A dotted blue border</p>
+    <!-- Content Section -->
+    <div class="row">
+      <!-- Alemania -->
+      <div class="column">
+        <h2>Alemania</h2>
+        <p>Alemania no inició la Segunda Guerra Mundial, pero fue uno de los países que más contribuyó a su estallido...</p>
+        <img src="imgs/descarga.png" alt="Alemania" height="100">
+      </div>
+      
+      <!-- Italia -->
+      <div class="column">
+        <h2>Italia</h2>
+        <p>Italia durante la Segunda Guerra Mundial fue un evento crucial que ayudó a poner fin a la guerra en Europa...</p>
+        <img src="imgs/images.jpeg" alt="Italia" height="100">
+      </div>
+      
+      <!-- Japón -->
+      <div class="column">
+        <h2>Japón</h2>
+        <p>Japón desempeñó un papel fundamental durante la Segunda Guerra Mundial, expandiendo su territorio a través de Asia y el Pacífico...</p>
+        <img src="imgs/descarga (1).png" alt="Japón" height="100">
+      </div>
+    </div>
 
+    <div class="row">
+      <!-- Unión Soviética -->
+      <div class="column side">
+        <h2>Unión Soviética</h2>
+        <p>La Unión Soviética tuvo una de las participaciones más extensas e influyentes del conflicto de la Segunda Guerra Mundial...</p>
+        <img src="imgs/descarga (2).png" alt="Unión Soviética" height="80">
+      </div>
+      
+      <!-- China -->
+      <div class="column middle">
+        <h2>China</h2>
+        <p>El Frente de China fue abierto por el Imperio de Japón al invadir Manchuria y luego el resto de China...</p>
+        <img src="imgs/descarga (3).png" alt="China" height="100">
+        
+        <h3>Estados Unidos</h3>
+        <p>La entrada de Estados Unidos no tuvo lugar hasta muchos años después. Al principio, el país mantuvo una posición neutral...</p>
+        <img src="imgs/descarga (1).jpeg" alt="Estados Unidos" height="100">
+      </div>
+      
+      <!-- Reino Unido -->
+      <div class="column side">
+        <h2>Reino Unido</h2>
+        <p>El Reino Unido fue trascendental en la Segunda Guerra Mundial. Winston Churchill, su primer ministro, mantuvo una postura firme...</p>
+        <img src="imgs/descarga (4).png" alt="Reino Unido" height="80">
+      </div>
+    </div>
 
+    <!-- Additional Info -->
+    <p>El 1 de septiembre de 1939, con la invasión alemana de Polonia, provocó la declaración de guerra de Reino Unido y Francia a Alemania.</p>
+    <p>Entre 1939 y 1945, participaron la mayor parte de las naciones del mundo, incluidas las grandes potencias.</p>
+
+    <h2>¿Cuánta gente murió?</h2>
+    <p>Se calcula que más de 80 millones de personas perdieron la vida.</p>
+    <h3>Países con más víctimas</h3>
+    <p class="dotted">Unión Soviética: 26,6 millones de personas, 8,86 millones de soldados y 17,74 millones de civiles.</p>
+    <p class="one">Alemania: Entre 4,5 y 10 millones de pérdidas humanas, 1,5 millones de civiles por bombardeos aliados.</p>
+    <p class="two">China: Se estima entre 50 y 60 millones de fallecidos.</p>
+    <p class="three">Japón: 1,2 millones de bajas entre sus soldados y 1 millón de civiles.</p>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>Footer</p>
+    </div>
+
+  </div> <!-- End of Container -->
 </body>
 </html>
+
